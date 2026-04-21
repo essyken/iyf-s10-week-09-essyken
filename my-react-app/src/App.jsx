@@ -34,6 +34,34 @@ function Navigation() {
         </nav>
     );
 }
+// Using Tailwind
+function Card({ title, children }) {
+    return (
+        <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                {title}
+            </h3>
+            <div className="text-gray-600">
+                {children}
+            </div>
+        </div>
+    );
+}
+
+function Button({ variant = 'primary', children }) {
+    const baseClasses = "px-4 py-2 rounded font-medium transition-colors";
+    const variants = {
+        primary: "bg-blue-500 text-white hover:bg-blue-600",
+        secondary: "bg-gray-200 text-gray-800 hover:bg-gray-300",
+        danger: "bg-red-500 text-white hover:bg-red-600"
+    };
+    
+    return (
+        <button className={`${baseClasses} ${variants[variant]}`}>
+            {children}
+        </button>
+    );
+}
 // App.jsx
 <Route path="posts/:postId" element={<PostDetail />} />
 
