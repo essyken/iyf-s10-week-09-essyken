@@ -1,7 +1,6 @@
-Week 9: CommunityHub — React Advanced
-Author
+## Week 9: CommunityHub — React Advanced
 
-## Name: ESTHER WANJIRU NJOROGE
+## Author Name: ESTHER WANJIRU NJOROGE
 ## GitHub: @essyken
 ## Date: May 12, 2026
 
